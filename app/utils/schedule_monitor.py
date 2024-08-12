@@ -4,7 +4,7 @@ import os
 from utils.helpers import get_path
 
 def get_log_file_path():
-    cwd = get_path()
+    cwd = os.path.dirname(get_path())
     return f"{cwd}/logs/runs.log"
     
 
