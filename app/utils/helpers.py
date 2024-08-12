@@ -1,4 +1,3 @@
-import dotenv
 import os
 
 def get_path():
@@ -7,4 +6,4 @@ def get_path():
     return current_directory
 
 def get_env_var(key):
-    return dotenv.get_variable(get_path(), key)
+    return os.getenv(get_path(), key)
